@@ -10,3 +10,26 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+++ Lottery Game - App Component props -
+
+import "./App.css";
+import LudoBoard from "./LudoBoard";
+import TodoList from "./TodoList";
+import Lottery from "./Lottery";
+import TicketNum from "./TicketNum";
+import Ticket from "./Ticket";
+import { sum } from "./helper";
+
+function App() {
+let winingCondition = (ticket) => {
+return ticket[0] === 0;
+};
+return (
+<>
+<!-- <Lottery n={3} winCondition={winingCondition} /> -->
+</>
+);
+}
+
+export default App;
